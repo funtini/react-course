@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 
 import PageHeader from '../template/pageHeader'
-import TodoForm from './todoForm'
+import TodoForm from './TodoForm'
 import TodoList from './todoList'
 
 const URL = 'http://localhost:5005/api/todos'
@@ -69,7 +69,7 @@ export default class Todo extends Component{
                         handleChange={this.handleChange}
                         handleSearch={this.handleSearch}
                         handleClear={this.handleClear}/>
-                <TodoList list={this.state.list} handleRemove={this.handleRemove}
+                <TodoList  handleRemove={this.handleRemove}
                 handleMarkAsDone={this.handleMarkAsDone} handleMarkAsPending={this.handleMarkAsPending}/>
             </div>
         )
